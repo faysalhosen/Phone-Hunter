@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Hunter</title>
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <!-- Navigation Section -->
+      <nav class="flex justify-between items-center gap-8 py-6">
+        <h2 class="text-3xl font-bold text-gray-700">Hot Gadgets</h2>
+        <a href="#/" class="btn btn-primary">Sign Up</a>
+      </nav>
+      <!-- Hero Section -->
+      <section id="hero-section" class="mt-12">
+        <h1 class="text-5xl font-bold text-center text-black mb-2">iPhone 13 Pro Max</h1>
+        <p class="max-w-[550px] mx-auto text-center text-gray-500 mb-6">There are many variations of passages of Lorem
+          Ipsum available, but the majority have suffered alteration in some form, by injected humor.</p>
+        <div class="text-center">
+          <a href="#/" class="btn btn-primary">Buy Now</a>
+        </div>
+        <img src="images/hero-img.png" alt="Phone Image" class="block mx-auto mt-8 w-full max-w-[650px]">
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <!-- Search Section -->
+    <section class="mt-12">
+      <div class="container">
+        <h2 class="text-3xl font-bold text-center mb-6">Search your phone</h2>
+        <div class="w-full max-w-[450px] mx-auto flex justify-between items-stretch relative">
+          <label for="search" class="text-gray-400 flex justify-center items-center p-4 z-10"><i
+              class="fa-solid fa-magnifying-glass"></i></label>
+          <input class="rounded absolute left-0 right-16 bottom-0 top-0 ps-10" type="search" name="search" id="search"
+            placeholder="Search your phone">
+          <a href="#/" id="search-btn" class="btn btn-primary z-10">Search</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Modal Section -->
+    <section id="modal-section"></section>
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="py-12 justify-center items-center hidden">
+      <span class="loading loading-spinner loading-lg text-primary"></span>
+    </div>
+    <!-- No Result Section -->
+    <div id="no-result" class="py-12 justify-center items-center hidden">
+      <span class="text-2xl font-bold">No Matching Found!</span>
+    </div>
+    <!-- Product Card Section -->
+    <section class="mt-12">
+      <div class="container">
+        <div id="card-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <div class="text-center">
+          <a href="#/" id="show-all" class="btn btn-primary mt-8 hidden">Show All</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-[rgba(13,110,253,0.05)] py-16 mt-12">
+    <div class="container">
+      <!-- Pre Footer -->
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-8">
+        <div>
+          <h2 class="text-3xl font-bold mb-2">Hot Gadgets</h2>
+          <span class="text-gray-500">You can definitely work.</span>
+        </div>
+        <div class="flex justify-center items-center gap-4">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <a href="#/" class="btn btn-primary">Get Premium</a>
+        </div>
+      </div>
+      <hr class="my-8">
+      <!-- Main Footer -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between gap-8">
+        <ul class="space-y-1">
+          <li><a href="#/">Product</a></li>
+          <li><a href="#/">Browse Jobs</a></li>
+          <li><a href="#/">Remote Jobs</a></li>
+          <li><a href="#/">Startup Jobs</a></li>
+          <li><a href="#/">Company Jobs</a></li>
+        </ul>
+        <ul class="space-y-1">
+          <li><a href="#/">Popular</a></li>
+          <li><a href="#/">UI/UX Design</a></li>
+          <li><a href="#/">Product Design</a></li>
+          <li><a href="#/">Back-End Developer</a></li>
+          <li><a href="#/">Front-End Developer</a></li>
+        </ul>
+        <ul class="space-y-1">
+          <li><a href="#/">Resources</a></li>
+          <li><a href="#/">FAQ</a></li>
+          <li><a href="#/">Support</a></li>
+          <li><a href="#/">Privacy Policy</a></li>
+          <li><a href="#/">Terms of Services</a></li>
+        </ul>
+        <ul class="space-y-1">
+          <li><a href="#/">Company</a></li>
+          <li><a href="#/">About Us</a></li>
+          <li><a href="#/">Contact Us</a></li>
+          <li><a href="#/">Career Tips</a></li>
+          <li><a href="#/">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

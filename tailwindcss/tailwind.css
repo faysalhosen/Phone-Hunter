@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .btn-primary {
+    @apply bg-[#0D6EFD] border-[#0D6EFD] text-white text-base normal-case;
+  }
+}
